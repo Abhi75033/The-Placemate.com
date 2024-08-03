@@ -9,11 +9,6 @@ const LoginwithMail = asyncHandler(async(req,res)=>{
     const {mail} = req.body
    
 
-   if (user && user1) {
-     throw new ApiError(403,'Your email is alraedy ragisted with us')
-   }else{
-    res.send({message:'Your mail'})
-   }
 
     // Setting Up the nodemailer
 
